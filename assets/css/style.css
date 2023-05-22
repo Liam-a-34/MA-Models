@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-banner-bg{
+    width: 100vw;
+    height: 45vh;
+    background-color: grey;
+    position: relative;
+}
+
+.main-banner-cont{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.main-banner-cont img{
+    width: 200px
+}
+
+.main-banner-cont h1{
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 40px;
+}
+
+.main-banner-cont h4{
+    font-family: "Open Sans", sans-serif;
+    color: rgb(208, 206, 206);
+    font-size: 18px;
+    margin: 5px 0
+}
+
+.modeling-cont{
+    width: 100vw;
+    height: 55vh;
+    background-color: rgb(38, 37, 37);
+}
+
+.model-tabs-cont{
+    height: 50px;
+    width: 100vw;
+}
+
+.model-tabs-div{
+    height: 50px;
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+}
+
+.model-tabs-div a{
+    color: white;
+    font-size: 20px;
+    padding-left: 10px;
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+}
+
+.model-tabs-div a::after{
+    content: "";
+    width: auto;
+    height: 10px;
+    margin-left: 10px;
+    border-right: 1px solid rgb(175, 175, 175);
+}
+
+.model-tabs-div a:last-child{
+    border-right: none;
+}
