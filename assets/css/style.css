@@ -5,7 +5,7 @@
 }
 
 .main-banner-bg{
-    width: 100vw;
+    width: 100%;
     height: 45vh;
     background-color: grey;
     position: relative;
@@ -41,14 +41,14 @@
 }
 
 .modeling-cont{
-    width: 100vw;
+    width: 100%;
     height: 55vh;
     background-color: rgb(38, 37, 37);
 }
 
 .model-tabs-cont{
     height: 50px;
-    width: 100vw;
+    width: 100%;
 }
 
 .model-tabs-div{
@@ -61,7 +61,8 @@
 }
 
 .model-tabs-div a{
-    color: white;
+    color: rgb(2, 165, 234);
+    text-decoration: none;
     font-size: 20px;
     padding-left: 10px;
     font-family: "Open Sans", sans-serif;
@@ -76,6 +77,20 @@
     border-right: 1px solid rgb(175, 175, 175);
 }
 
-.model-tabs-div a:last-child{
+.model-tabs-div a:last-child::after{
     border-right: none;
+}
+
+.models-display-cont{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.model-item{
+    width: 25%;
+    min-height: 400px;
+    background-color: rgb(128, 128, 128);
+    border: 1px solid black
 }
