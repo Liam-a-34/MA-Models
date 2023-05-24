@@ -1,6 +1,8 @@
 const rightButton = document.querySelector(".right-scroll")
 const leftButton = document.querySelector(".left-scroll")
 const portfolioCont = document.getElementById("portfolio-cont")
+let rightCount = 0;
+let leftCount = 0;
 
 
 
@@ -9,12 +11,32 @@ rightButton.addEventListener("click", function(){
     portfolioCont.classList.remove("move-left")
     portfolioCont.classList.add("move-right")
 
+    if(rightButton.classList.contains("button-visibility")){
+        rightButton.classList.remove("button-visbility")
+    } else {
+        rightButton.classList.add("button-visibility")
+    }
+
+    if(leftButton.classList.contains("button-visibility")){
+        leftButton.classList.remove("button-visibility")
+    }
+
 })
 
 leftButton.addEventListener("click", function(){
     
     portfolioCont.classList.remove("move-right")
     portfolioCont.classList.add("move-left")
+
+    if(leftButton.classList.contains("button-visibility")){
+        leftButton.classList.remove("button-visbility")
+    } else {
+        leftButton.classList.add("button-visibility")
+    }
+
+    if(rightButton.classList.contains("button-visibility")){
+        rightButton.classList.remove("button-visibility")
+    }
 
 })
 
