@@ -9,6 +9,8 @@ main{
     height: 100vh;
     position: relative;
     overflow: hidden;
+    background-image: url("../models/Lighthouse\ image\ render.png");
+    background-size: cover;
 }
 
 #portfolio-cont{
@@ -27,7 +29,7 @@ button:hover{
 .main-banner-bg{
     width: 100vw;
     height: 100vh;
-    background-color: rgb(225, 225, 225);
+    background-color: transparent;
     position: relative;
 }
 
@@ -91,11 +93,12 @@ button:hover{
     color: white;
     font-family: "Open Sans", sans-serif;
     font-size: 80px;
+    text-shadow: 3px 3px rgb(2, 110, 233);
 }
 
 .main-banner-cont h4{
     font-family: "Open Sans", sans-serif;
-    color: rgb(106, 105, 105);
+    color: rgb(164, 164, 164);
     font-size: 20px;
 }
 
@@ -104,13 +107,13 @@ button:hover{
     position: relative;
     right: 7px;
     top: 6px;
-    filter: invert(1) brightness(0.4);
+    filter: invert(1) brightness(0.6);
 }
 
 .modeling-cont{
     width: 100vw;
     height: 100vh;
-    background-color: rgb(38, 37, 37);
+    position: relative;
 }
 
 .model-tabs-cont{
@@ -137,6 +140,11 @@ button:hover{
     position: relative;
 }
 
+.model-tabs-div a:hover{
+    color: white;
+    cursor: pointer;
+}
+
 .model-tabs-div a::after{
     content: "";
     width: auto;
@@ -150,23 +158,77 @@ button:hover{
 }
 
 .models-display-cont{
-    width: 85%;
+    width: 80%;
+    height: 85vh;
     margin: 25px auto 0 auto;
-    height: auto;
     display: flex;
     flex-wrap: wrap;
+    overflow-y: scroll;
+    justify-content: center;
+}
+
+.models-display-cont::-webkit-scrollbar{
+    display: none;
 }
 
 .model-item{
-    width: 25%;
+    width: 350px;
+    height: 350px;
     background-color: rgb(128, 128, 128);
-    border: 1px solid black
+    margin: 2px;
+    background-size: cover;
+    position: relative;
+}
+
+.model-item:hover{
+    cursor: pointer;
 }
 
 .model-item::before{
     content: "";
     display: block;
     padding-top: 100%;
+}
+
+.model-item h5{
+    position: absolute;
+    bottom: 15px;
+    padding: 5px 15px;
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.656);
+}
+
+.icons-div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+
+.img-item{
+    width: 35px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.656);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.threeD-item{
+    width: 35px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.656);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons-div img{
+    width: 25px;
+    height: 25px;
+    filter: invert(0.7);
 }
 
 .move-right{
