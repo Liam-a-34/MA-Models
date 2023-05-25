@@ -1,5 +1,7 @@
-const rightButton = document.querySelector(".right-scroll")
-const leftButton = document.querySelector(".left-scroll")
+const rightButton = document.querySelector("#right-button")
+const leftButton = document.querySelector("#left-button")
+const rightButton2 = document.querySelector("#right-button2")
+const leftButton2 = document.querySelector("#left-button2")
 const portfolioCont = document.getElementById("portfolio-cont")
 let rightCount = 0;
 let leftCount = 0;
@@ -21,6 +23,10 @@ rightButton.addEventListener("click", function(){
         leftButton.classList.remove("button-visibility")
     }
 
+    if(rightButton2.classList.contains("button-visibility")){
+        rightButton2.classList.remove("button-visibility")
+    }
+
 })
 
 leftButton.addEventListener("click", function(){
@@ -38,6 +44,38 @@ leftButton.addEventListener("click", function(){
         rightButton.classList.remove("button-visibility")
     }
 
+    rightButton2.classList.add("button-visibility")
+
+})
+
+rightButton2.addEventListener("click", function(){
+    portfolioCont.classList.remove("move-right")
+    portfolioCont.classList.add("move-right2")
+
+    if(rightButton2.classList.contains("button-visibility")){
+        rightButton2.classList.remove("button-visibility")
+    } else {
+        rightButton2.classList.add("button-visibility")
+    }
+
+    leftButton.classList.add("button-visibility")
+
+    leftButton2.classList.remove("button-visibility")
+})
+
+leftButton2.addEventListener("click", function(){
+    portfolioCont.classList.remove("move-right2")
+    portfolioCont.classList.add("move-right")
+
+    if(leftButton2.classList.contains("button-visibility")){
+        leftButton2.classList.remove("button-visibility")
+    } else {
+        leftButton2.classList.add("button-visibility")
+    }
+
+    rightButton2.classList.remove("button-visibility")
+
+    leftButton.classList.remove("button-visibility")
 })
 
 const parentElement = document.querySelector(".models-display-cont")
