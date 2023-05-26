@@ -138,6 +138,8 @@ button:hover{
     font-family: "Open Sans", sans-serif;
     font-size: 130px;
     text-shadow: 3px 3px rgb(2, 110, 233);
+    width: 100vw;
+    text-align: center;
 }
 
 .main-banner-cont h4{
