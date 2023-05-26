@@ -255,6 +255,12 @@ button:hover{
     display: flex;
 }
 
+.icons-div img{
+    width: 25px;
+    height: 25px;
+    filter: invert(0.7);
+ } 
+
 .img-item{
     width: 35px;
     height: 35px;
@@ -271,12 +277,6 @@ button:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.icons-div img{
-    width: 25px;
-    height: 25px;
-    filter: invert(0.7);
 }
 
 .about-page{
